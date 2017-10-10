@@ -10,14 +10,16 @@ import { connect } from 'react-redux'
 import * as UserActions from '@redux/user/actions'
 
 // The component we're mapping to
-import AppLaunchRender from './LaunchView'
+import AppRender from './AppView'
 
 // What data from the store shall we send to the component?
-const mapStateToProps = () => ({})
+const mapStateToProps = state => ({
+  profile: state.user.profile
+})
 
 // Any actions to map to the component?
 const mapDispatchToProps = {
-  getUser: UserActions.getUser
+  // getUser: UserActions.getUser
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(AppLaunchRender)
+export default connect(mapStateToProps, mapDispatchToProps)(AppRender)
