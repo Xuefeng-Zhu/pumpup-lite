@@ -2,6 +2,7 @@ import api from '@lib/api'
 
 export default {
   getProfileFeed,
+  getPopularFeed
 }
 
 function getProfileFeed() {
@@ -10,6 +11,16 @@ function getProfileFeed() {
       dispatch({
         data,
         type: 'GET_PROFILE_FEED',
+      })
+    })
+}
+
+function getPopularFeed() {
+  return dispatch => api.getPopularFeed()
+    .then(({ data }) => {
+      dispatch({
+        data,
+        type: 'GET_POPULAR_FEED',
       })
     })
 }

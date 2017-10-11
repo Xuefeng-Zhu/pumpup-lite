@@ -12,7 +12,7 @@ const { width } = Dimensions.get('window')
 
 const styles = StyleSheet.create({
   container: {
-    height: 300,
+    height: 250,
     padding: 10,
   },
   slide: {

@@ -19,7 +19,8 @@ const mapStateToProps = () => ({})
 // Any actions to map to the component
 const mapDispatchToProps = {
   getUser: UserActions.getUser,
-  getProfileFeed: FeedActions.getProfileFeed
+  getProfileFeed: FeedActions.getProfileFeed,
+  getPopularFeed: FeedActions.getPopularFeed,
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(AppLaunchRender)

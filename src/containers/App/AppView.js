@@ -34,6 +34,7 @@ export default class AppLaunch extends Component {
   static propTypes = {
     profile: PropTypes.object.isRequired,
     profileFeed: PropTypes.array.isRequired,
+    popularFeed: PropTypes.array.isRequired,
   }
 
   constructor() {
@@ -41,7 +42,7 @@ export default class AppLaunch extends Component {
   }
 
   render() {
-    const { profile, profileFeed=[] } = this.props
+    const { profile, profileFeed, popularFeed } = this.props
 
     return (
       <View style={[AppStyles.container, styles.container]}>
@@ -50,7 +51,7 @@ export default class AppLaunch extends Component {
 
         <ProfileFeed posts={profileFeed}/>
 
-        <PopularFeed posts={profileFeed}/>
+        <PopularFeed posts={popularFeed}/>
       </View>
     )
   }

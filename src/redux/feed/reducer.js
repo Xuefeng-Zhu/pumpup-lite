@@ -7,6 +7,11 @@ export default function feedReducer(state = initialState, action) {
       ...state,
       profile: action.data.result.posts,
     }
+  case 'GET_POPULAR_FEED':
+    return {
+      ...state,
+      popular: action.data.result.posts,
+    }
   default:
     return state
   }

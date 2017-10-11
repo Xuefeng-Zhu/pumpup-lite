@@ -13,6 +13,7 @@ import AppRender from './AppView'
 const mapStateToProps = state => ({
   profile: state.user.profile,
   profileFeed: state.feed.profile,
+  popularFeed: state.feed.popular,
 })
 
 // Any actions to map to the component

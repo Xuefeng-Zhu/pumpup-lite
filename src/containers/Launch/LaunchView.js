@@ -36,6 +36,7 @@ class AppLaunch extends Component {
   static propTypes = {
     getUser: PropTypes.func.isRequired,
     getProfileFeed: PropTypes.func.isRequired,
+    getPopularFeed: PropTypes.func.isRequired,
   }
 
   constructor() {
@@ -47,7 +48,8 @@ class AppLaunch extends Component {
 
     Promise.all([
       this.props.getUser(),
-      this.props.getProfileFeed()
+      this.props.getProfileFeed(),
+      this.props.getPopularFeed()
     ]).then(() => {
       Actions.app({ type: 'reset' })
     })
