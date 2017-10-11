@@ -63,7 +63,7 @@ export default class UserProfile extends Component {
   }
 
   render() {
-    const { profile: {name, profileImage, bio} } = this.props
+    const { profile: {bio, name, profileImage} } = this.props
     const { showMore } = this.state
     const numberOfLines = showMore ? null : 3
 

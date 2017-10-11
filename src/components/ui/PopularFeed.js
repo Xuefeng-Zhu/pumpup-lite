@@ -22,7 +22,7 @@ export default class PopularFeed extends Component {
   static componentName = 'PopularFeed';
 
   static propTypes = {
-    posts: PropTypes.array.isRequired,
+    feed: PropTypes.array.isRequired,
   }
 
   constructor(props) {
@@ -30,18 +30,14 @@ export default class PopularFeed extends Component {
   }
 
   render() {
-    const { posts } = this.props
-    const bricks = posts.map(post => ({
-      uri: post.thumbnail,
-      key: post.objectId,
-    }))
+    const { feed } = this.props
 
     return (
       <View style={styles.container}>
         <Masonry
           sorted
           columns={3}
-          bricks={bricks}
+          bricks={feed}
         />
       </View>
     )

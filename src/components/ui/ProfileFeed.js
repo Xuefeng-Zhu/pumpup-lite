@@ -21,7 +21,7 @@ export default class ProfileFeed extends Component {
   static componentName = 'ProfileFeed';
 
   static propTypes = {
-    posts: PropTypes.array.isRequired,
+    feed: PropTypes.array.isRequired,
   }
 
   constructor(props) {
@@ -29,12 +29,11 @@ export default class ProfileFeed extends Component {
   }
 
   render() {
-    const { posts } = this.props
-    const images = posts.map(post => post.thumbnail)
+    const { feed } = this.props
 
     return (
       <View style={styles.container}>
-        <ImageSlider images={images}>
+        <ImageSlider images={feed}>
         </ImageSlider>
       </View>
     )

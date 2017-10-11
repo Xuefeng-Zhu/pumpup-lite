@@ -53,9 +53,9 @@ export default class AppLaunch extends Component {
         <UserProfile profile={profile} />
         <Divider />
 
-        <ProfileFeed posts={profileFeed}/>
+        <ProfileFeed feed={profileFeed}/>
 
-        <PopularFeed posts={popularFeed}/>
+        <PopularFeed feed={popularFeed}/>
       </ScrollView>
     )
   }
