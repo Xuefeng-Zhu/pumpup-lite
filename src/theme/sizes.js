@@ -4,6 +4,7 @@
  * React Native Starter App
  * https://github.com/mcnamee/react-native-starter-app
  */
+
 import { Dimensions, Platform } from 'react-native'
 
 const { width, height } = Dimensions.get('window')

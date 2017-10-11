@@ -1,6 +1,6 @@
 # pumpup-lite
 
-A simple pumpup demo app built with react native and redux
+A simple pumpup demo app built with react native and redux. The project is based on [react-native-starter-app](https://github.com/mcnamee/react-native-starter-app)
 
 ## Getting Started
 

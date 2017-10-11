@@ -1,3 +1,7 @@
+/**
+ * App Screen showing user profile, profile posts, and popular posts
+ */
+
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import {

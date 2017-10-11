@@ -1,3 +1,7 @@
+/**
+ * Libarary used to fetch data from pumpup api endpoint
+ */
+
 import axios from 'axios'
 
 export default {

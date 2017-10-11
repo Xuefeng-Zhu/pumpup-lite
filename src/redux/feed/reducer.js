@@ -1,3 +1,7 @@
+/**
+ * Feed reducer
+ */
+
 export const initialState = {}
 
 export default function feedReducer(state = initialState, action) {

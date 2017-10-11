@@ -1,3 +1,7 @@
+/**
+ * Feed actions
+ */
+
 import api from '@lib/api'
 
 export default {
@@ -5,6 +9,12 @@ export default {
   getPopularFeed
 }
 
+
+/**
+ * Fetch profile posts through api
+ *
+ * @return {Function}
+ */
 function getProfileFeed() {
   return dispatch => api.getProfileFeed()
     .then(({ data }) => {
@@ -15,6 +25,11 @@ function getProfileFeed() {
     })
 }
 
+/**
+ * Fetch popular posts through api
+ *
+ * @return {Function}
+ */
 function getPopularFeed() {
   return dispatch => api.getPopularFeed()
     .then(({ data }) => {

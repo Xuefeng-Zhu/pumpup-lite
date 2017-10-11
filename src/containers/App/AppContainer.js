@@ -1,9 +1,7 @@
 /**
- * Launch Screen Container
- *
- * React Native Starter App
- * https://github.com/mcnamee/react-native-starter-app
+ * Main App Screen Container
  */
+
 import { connect } from 'react-redux'
 
 // The component we're mapping to

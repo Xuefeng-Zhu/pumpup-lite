@@ -2,11 +2,11 @@
  * Launch Screen
  *  - Shows a nice loading screen whilst:
  *    - Preloading any specified app content
- *    - Checking if user is logged in, and redirects from there
  *
  * React Native Starter App
  * https://github.com/mcnamee/react-native-starter-app
  */
+
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import {
@@ -20,7 +20,7 @@ import { Actions } from 'react-native-router-flux'
 // Consts and Libs
 import { AppStyles, AppSizes } from '@theme/'
 
-/* Styles ==================================================================== */
+// Styles
 const styles = StyleSheet.create({
   launchImage: {
     width: AppSizes.screen.width,
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
   },
 })
 
-/* Component ==================================================================== */
+// Component
 class AppLaunch extends Component {
   static componentName = 'AppLaunch';
 
@@ -44,7 +44,7 @@ class AppLaunch extends Component {
   }
 
   componentDidMount() {
-
+    // Load required data
     Promise.all([
       this.props.getUser(),
       this.props.getProfileFeed(),
@@ -52,7 +52,6 @@ class AppLaunch extends Component {
     ]).then(() => {
       Actions.app({ type: 'reset' })
     })
-
   }
 
   render = () => (

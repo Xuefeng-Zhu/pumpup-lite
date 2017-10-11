@@ -1,3 +1,7 @@
+/**
+ * Component showing profile posts in slider format
+ */
+
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import {

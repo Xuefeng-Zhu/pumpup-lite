@@ -1,3 +1,7 @@
+/**
+ * Component showing user basic profile info, like avatar, name, and bio
+ */
+
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import {
@@ -59,7 +63,7 @@ export default class UserProfile extends Component {
   }
 
   render() {
-    const { name, profileImage, bio } = this.props.profile
+    const { profile: {name, profileImage, bio} } = this.props
     const { showMore } = this.state
     const numberOfLines = showMore ? null : 3
 
