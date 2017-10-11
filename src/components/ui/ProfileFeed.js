@@ -4,7 +4,7 @@ import {
   StyleSheet,
   View,
 } from 'react-native'
-import ImageSlider from 'react-native-image-slider';
+import ImageSlider from 'react-native-image-slider'
 
 const styles = StyleSheet.create({
   container: {

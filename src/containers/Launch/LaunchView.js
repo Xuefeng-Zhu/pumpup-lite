@@ -12,7 +12,6 @@ import PropTypes from 'prop-types'
 import {
   View,
   ImageBackground,
-  StatusBar,
   StyleSheet,
   ActivityIndicator,
 } from 'react-native'

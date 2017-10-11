@@ -5,7 +5,6 @@
  * https://github.com/mcnamee/react-native-starter-app
  */
 
-import AppConfig from './config';
-import ErrorMessages from './errors';
+import AppConfig from './config'
 
-export { AppConfig, ErrorMessages };
+export { AppConfig }
