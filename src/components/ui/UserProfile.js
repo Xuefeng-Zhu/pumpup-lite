@@ -8,6 +8,7 @@ import {
 import {
   Avatar,
 } from 'react-native-elements'
+import Autolink from 'react-native-autolink'
 
 const styles = StyleSheet.create({
   container: {
@@ -74,13 +75,16 @@ export default class UserProfile extends Component {
         </View>
 
         <View style={styles.bio}>
-          <Text style={styles.name}>
+          <Text style={styles.name} numberOfLines={1}>
             {name}
           </Text>
 
-          <Text numberOfLines={numberOfLines}>
-            {bio}
-          </Text>
+          <Autolink
+            hashtag="instagram"
+            mention="instagram"
+            numberOfLines={numberOfLines}
+            text={bio}
+          />
 
           { !showMore &&
             <Text style={styles.readMore} onPress={this.onClickReadMore}>

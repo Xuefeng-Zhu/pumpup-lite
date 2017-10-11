@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import {
-  View,
+  ScrollView,
   StyleSheet,
 } from 'react-native'
 import {
@@ -45,14 +45,14 @@ export default class AppLaunch extends Component {
     const { profile, profileFeed, popularFeed } = this.props
 
     return (
-      <View style={[AppStyles.container, styles.container]}>
+      <ScrollView style={[AppStyles.container, styles.container]}>
         <UserProfile profile={profile} />
         <Divider />
 
         <ProfileFeed posts={profileFeed}/>
 
         <PopularFeed posts={popularFeed}/>
-      </View>
+      </ScrollView>
     )
   }
 }
