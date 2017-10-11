@@ -3594,6 +3594,10 @@ react-native-google-analytics-bridge@^5.0.0:
   version "5.3.3"
   resolved "https://registry.yarnpkg.com/react-native-google-analytics-bridge/-/react-native-google-analytics-bridge-5.3.3.tgz#4a91e1fca5cf5d87b3211a301f851cfbadb16785"
 
+react-native-image-slider@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/react-native-image-slider/-/react-native-image-slider-1.1.5.tgz#1fa8537d1e0477c41d6c3a05f3fe02ffcdddd150"
+
 react-native-injectable-component@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/react-native-injectable-component/-/react-native-injectable-component-0.1.2.tgz#44ee28262c79789254ce5708b3477c134b2610c0"

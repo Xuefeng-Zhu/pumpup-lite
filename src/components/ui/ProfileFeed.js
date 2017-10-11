@@ -1,28 +1,15 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import {
-  Dimensions,
-  Image,
   StyleSheet,
   View,
 } from 'react-native'
-import Swiper from 'react-native-swiper'
-
-const { width } = Dimensions.get('window')
+import ImageSlider from 'react-native-image-slider';
 
 const styles = StyleSheet.create({
   container: {
-    height: 250,
     padding: 10,
-  },
-  slide: {
-    flex: 1,
-    justifyContent: 'center'
-  },
-  image: {
-    width,
-    flex: 1
-  },
+  }
 })
 
 export default class ProfileFeed extends Component {
@@ -37,27 +24,14 @@ export default class ProfileFeed extends Component {
     super(props)
   }
 
-  renderPost(post) {
-    const { objectId, thumbnail } = post
-
-    return (
-      <View style={styles.slide} key={objectId}>
-        <Image
-          style={styles.image}
-          source={{uri: thumbnail}}
-        />
-      </View>
-    )
-  }
-
   render() {
     const { posts } = this.props
+    const images = posts.map(post => post.thumbnail)
 
     return (
       <View style={styles.container}>
-        <Swiper>
-          {posts.map(post => this.renderPost(post))}
-        </Swiper>
+        <ImageSlider images={images}>
+        </ImageSlider>
       </View>
     )
   }
