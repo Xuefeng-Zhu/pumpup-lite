@@ -11,11 +11,13 @@ import { combineReducers } from 'redux'
 // We need to import each one here and add them to the combiner at the bottom
 import router from '@redux/router/reducer'
 import user from '@redux/user/reducer'
+import feed from '@redux/feed/reducer'
 
 // Combine all
 const appReducer = combineReducers({
   router,
   user,
+  feed,
 })
 
 // Setup root reducer

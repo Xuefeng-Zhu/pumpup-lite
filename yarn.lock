@@ -1444,6 +1444,10 @@ dashdash@^1.12.0:
   dependencies:
     assert-plus "^1.0.0"
 
+data.task@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/data.task/-/data.task-3.1.1.tgz#e985f5bedadd926b2d63c1a5d2076cff917a52ad"
+
 dateformat@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/dateformat/-/dateformat-2.2.0.tgz#4065e2013cf9fb916ddfd82efb506ad4c6769062"
@@ -3579,6 +3583,20 @@ react-native-google-analytics-bridge@^5.0.0:
   version "5.3.3"
   resolved "https://registry.yarnpkg.com/react-native-google-analytics-bridge/-/react-native-google-analytics-bridge-5.3.3.tgz#4a91e1fca5cf5d87b3211a301f851cfbadb16785"
 
+react-native-injectable-component@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/react-native-injectable-component/-/react-native-injectable-component-0.1.2.tgz#44ee28262c79789254ce5708b3477c134b2610c0"
+
+react-native-masonry@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/react-native-masonry/-/react-native-masonry-0.4.2.tgz#d383cca95412001b13bc3ab5c34e0056db56b325"
+  dependencies:
+    data.task "^3.1.1"
+    lodash.isequal "^4.5.0"
+    opencollective "^1.0.3"
+    prop-types "^15.5.8"
+    react-native-injectable-component "^0.1.2"
+
 react-native-router-flux@3.39.2:
   version "3.39.2"
   resolved "https://registry.yarnpkg.com/react-native-router-flux/-/react-native-router-flux-3.39.2.tgz#f5373136440e627dfc39edc61cb4bf54581245e0"
@@ -3591,6 +3609,12 @@ react-native-router-flux@3.39.2:
 react-native-side-menu@^1.0.2:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/react-native-side-menu/-/react-native-side-menu-1.1.3.tgz#6ef5d2232ecf718312df6cedef019148bac3073a"
+  dependencies:
+    prop-types "^15.5.10"
+
+react-native-swiper@^1.5.13:
+  version "1.5.13"
+  resolved "https://registry.yarnpkg.com/react-native-swiper/-/react-native-swiper-1.5.13.tgz#fa695cd4ab77b9a9df2d2bfee38ea7274dd07a2e"
   dependencies:
     prop-types "^15.5.10"
 

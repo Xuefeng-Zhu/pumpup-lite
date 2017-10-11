@@ -1,15 +1,15 @@
 import api from '@lib/api'
 
 export default {
-  getUser,
+  getProfileFeed,
 }
 
-function getUser() {
-  return dispatch => api.getUser()
+function getProfileFeed() {
+  return dispatch => api.getProfileFeed()
     .then(({ data }) => {
       dispatch({
         data,
-        type: 'GET_USER',
+        type: 'GET_PROFILE_FEED',
       })
     })
 }

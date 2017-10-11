@@ -3,57 +3,55 @@ import PropTypes from 'prop-types'
 import {
   View,
   StyleSheet,
-  Text
 } from 'react-native'
 import {
   Divider,
 } from 'react-native-elements'
 
 // Consts and Libs
-import { AppStyles, AppSizes } from '@theme/'
+import {
+  AppStyles,
+  AppSizes
+} from '@theme/'
 
 // Components
-import { UserProfile } from '@ui/'
+import {
+  UserProfile,
+  ProfileFeed,
+  PopularFeed,
+} from '@ui/'
 
-
-/* Styles ==================================================================== */
 const styles = StyleSheet.create({
   container: {
     paddingTop: AppSizes.statusBarHeight
   }
 })
 
-/* Component ==================================================================== */
-class AppLaunch extends Component {
+export default class AppLaunch extends Component {
 
   static componentName = 'AppLaunch';
 
   static propTypes = {
     profile: PropTypes.object.isRequired,
+    profileFeed: PropTypes.array.isRequired,
   }
 
   constructor() {
     super()
   }
 
-  componentDidMount() {
-    // Show status bar on app launch
-
-  }
-
   render() {
-    const { profile } = this.props
+    const { profile, profileFeed=[] } = this.props
 
     return (
       <View style={[AppStyles.container, styles.container]}>
         <UserProfile profile={profile} />
-        <Divider></Divider>
+        <Divider />
 
+        <ProfileFeed posts={profileFeed}/>
 
+        <PopularFeed posts={profileFeed}/>
       </View>
     )
   }
 }
-
-/* Export Component ==================================================================== */
-export default AppLaunch

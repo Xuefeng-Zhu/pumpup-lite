@@ -1,6 +1,6 @@
 export const initialState = {}
 
-export default function sideMenuReducer(state = initialState, action) {
+export default function userReducer(state = initialState, action) {
   switch (action.type) {
   case 'GET_USER':
     return {

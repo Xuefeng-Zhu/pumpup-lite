@@ -6,7 +6,11 @@
  */
 
 import UserProfile from './UserProfile'
+import ProfileFeed from './ProfileFeed'
+import PopularFeed from './PopularFeed'
 
 export {
   UserProfile,
+  ProfileFeed,
+  PopularFeed
 }

@@ -35,6 +35,7 @@ class AppLaunch extends Component {
 
   static propTypes = {
     getUser: PropTypes.func.isRequired,
+    getProfileFeed: PropTypes.func.isRequired,
   }
 
   constructor() {
@@ -43,13 +44,14 @@ class AppLaunch extends Component {
   }
 
   componentDidMount() {
-    // Show status bar on app launch
-    StatusBar.setHidden(false, true)
 
-    this.props.getUser()
-      .then(() => {
-        Actions.app({ type: 'reset' })
-      })
+    Promise.all([
+      this.props.getUser(),
+      this.props.getProfileFeed()
+    ]).then(() => {
+      Actions.app({ type: 'reset' })
+    })
+
   }
 
   render = () => (

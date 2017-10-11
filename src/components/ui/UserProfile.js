@@ -9,19 +9,17 @@ import {
   Avatar,
 } from 'react-native-elements'
 
-
-/* Styles ==================================================================== */
 const styles = StyleSheet.create({
+  container: {
+    'backgroundColor': '#FFFFFF',
+    flexDirection: 'row',
+    padding: 10,
+  },
   avatar: {
     flex: 1,
   },
   bio: {
     flex: 3,
-  },
-  container: {
-    'backgroundColor': '#FFFFFF',
-    flexDirection: 'row',
-    padding: 10,
   },
   name: {
     fontSize: 20,
@@ -35,8 +33,7 @@ const styles = StyleSheet.create({
   }
 })
 
-/* Component ==================================================================== */
-class UserProfile extends Component {
+export default class UserProfile extends Component {
 
   static componentName = 'UserProfile';
 
@@ -95,6 +92,3 @@ class UserProfile extends Component {
     )
   }
 }
-
-/* Export Component ==================================================================== */
-export default UserProfile
