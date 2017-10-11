@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "pretest": "./node_modules/.bin/eslint -c .eslintrc --ext .js src",
+    "lint": "./node_modules/.bin/eslint -c .eslintrc --ext .js .",
     "test": "jest",
-    "ios": "react-native run-ios`"
+    "ios": "react-native run-ios",
+    "android": "react-native run-android"
   },
   "jest": {
     "preset": "react-native",
@@ -26,9 +27,7 @@
     "react-addons-shallow-compare": "^15.4.2",
     "react-native": "0.49.3",
     "react-native-autolink": "^1.1.1",
-    "react-native-dotenv": "0.1.0",
     "react-native-elements": "^0.17.0",
-    "react-native-google-analytics-bridge": "^5.0.0",
     "react-native-image-slider": "^1.1.5",
     "react-native-masonry": "^0.4.2",
     "react-native-router-flux": "3.39.2",
@@ -45,7 +44,6 @@
     "babel-preset-react-native": "4.0.0",
     "babel-register": "^6.16.3",
     "eslint": "^4.8.0",
-    "eslint-config-airbnb": "^16.0.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.0.1",

@@ -439,12 +439,6 @@ babel-plugin-check-es2015-constants@^6.22.0, babel-plugin-check-es2015-constants
   dependencies:
     babel-runtime "^6.22.0"
 
-babel-plugin-dotenv@0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-dotenv/-/babel-plugin-dotenv-0.1.0.tgz#dd769175a5a913c940ad18316c36621fc04598b2"
-  dependencies:
-    dotenv "^2.0.0"
-
 babel-plugin-external-helpers@^6.18.0:
   version "6.22.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-external-helpers/-/babel-plugin-external-helpers-6.22.0.tgz#2285f48b02bd5dede85175caf8c62e86adccefa1"
@@ -1563,10 +1557,6 @@ dom-walk@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/dom-walk/-/dom-walk-0.1.1.tgz#672226dc74c8f799ad35307df936aba11acd6018"
 
-dotenv@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-2.0.0.tgz#bd759c357aaa70365e01c96b7b0bec08a6e0d949"
-
 duplexer2@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/duplexer2/-/duplexer2-0.0.2.tgz#c614dcf67e2fb14995a91711e5a617e8a60a31db"
@@ -1650,18 +1640,6 @@ escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
 
-eslint-config-airbnb-base@^12.0.2:
-  version "12.0.2"
-  resolved "https://registry.yarnpkg.com/eslint-config-airbnb-base/-/eslint-config-airbnb-base-12.0.2.tgz#45fea317d71b8f1da323c730f3a8471988757793"
-  dependencies:
-    eslint-restricted-globals "^0.1.1"
-
-eslint-config-airbnb@^16.0.0:
-  version "16.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-airbnb/-/eslint-config-airbnb-16.0.0.tgz#21e81476ab7f5f27c1a900ff415cac9e1e12f3ed"
-  dependencies:
-    eslint-config-airbnb-base "^12.0.2"
-
 eslint-import-resolver-node@^0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/eslint-import-resolver-node/-/eslint-import-resolver-node-0.3.1.tgz#4422574cde66a9a7b099938ee4d508a199e0e3cc"
@@ -1711,10 +1689,6 @@ eslint-plugin-react@^7.0.1:
     has "^1.0.1"
     jsx-ast-utils "^2.0.0"
     prop-types "^15.5.10"
-
-eslint-restricted-globals@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/eslint-restricted-globals/-/eslint-restricted-globals-0.1.1.tgz#35f0d5cbc64c2e3ed62e93b4b1a7af05ba7ed4d7"
 
 eslint-scope@^3.7.1:
   version "3.7.1"
@@ -3563,12 +3537,6 @@ react-native-autolink@^1.1.1:
     autolinker "^1.2.0"
     prop-types "^15.5.10"
 
-react-native-dotenv@0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/react-native-dotenv/-/react-native-dotenv-0.1.0.tgz#201de3b47a514476bfd33117a54ddb4cf90b00d8"
-  dependencies:
-    babel-plugin-dotenv "0.1.0"
-
 react-native-elements@^0.17.0:
   version "0.17.0"
   resolved "https://registry.yarnpkg.com/react-native-elements/-/react-native-elements-0.17.0.tgz#b5f3e0959b41f04f0aa6a1c1a547be22f94c8a12"
@@ -3589,10 +3557,6 @@ react-native-experimental-navigation@0.27.x:
     babel-preset-react-native "^1.9.0"
     clamp "^1.0.1"
     fbjs "^0.8.1"
-
-react-native-google-analytics-bridge@^5.0.0:
-  version "5.3.3"
-  resolved "https://registry.yarnpkg.com/react-native-google-analytics-bridge/-/react-native-google-analytics-bridge-5.3.3.tgz#4a91e1fca5cf5d87b3211a301f851cfbadb16785"
 
 react-native-image-slider@^1.1.5:
   version "1.1.5"
@@ -3627,12 +3591,6 @@ react-native-side-menu@^1.0.2:
   dependencies:
     prop-types "^15.5.10"
 
-react-native-swiper@^1.5.13:
-  version "1.5.13"
-  resolved "https://registry.yarnpkg.com/react-native-swiper/-/react-native-swiper-1.5.13.tgz#fa695cd4ab77b9a9df2d2bfee38ea7274dd07a2e"
-  dependencies:
-    prop-types "^15.5.10"
-
 react-native-tab-navigator@^0.3.4:
   version "0.3.4"
   resolved "https://registry.yarnpkg.com/react-native-tab-navigator/-/react-native-tab-navigator-0.3.4.tgz#54a18f1ad06a09d4a0de81ff00416bc1b760c960"
@@ -3645,8 +3603,8 @@ react-native-tabs@^1.0.9:
   resolved "https://registry.yarnpkg.com/react-native-tabs/-/react-native-tabs-1.0.9.tgz#75d3c35e8b5b6970869eab282372cb32e2a782cd"
 
 react-native-vector-icons@^4.2.0:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/react-native-vector-icons/-/react-native-vector-icons-4.4.0.tgz#cdfc1cd86ab495b2a4926bcec8f08c155475cbf1"
+  version "4.4.2"
+  resolved "https://registry.yarnpkg.com/react-native-vector-icons/-/react-native-vector-icons-4.4.2.tgz#090f42ee0396c4cc4eae0ddaa518028ba8df40c7"
   dependencies:
     lodash "^4.0.0"
     prop-types "^15.5.10"
