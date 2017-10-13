@@ -11,6 +11,7 @@ describe('user actions', () => {
     it('dispatch GET_USER action', (done) => {
       const dispatch = (action) => {
         action.should.have.property('type', 'GET_USER')
+        done()
       }
 
       UserActions.getUser()(dispatch)
