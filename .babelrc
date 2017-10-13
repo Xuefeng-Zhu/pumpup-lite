@@ -1,3 +1,15 @@
 {
-  "presets": ["react-native"]
+  "presets": ["react-native"],
+  "env": {
+    "mocha": {
+      "plugins": [
+        ["module-resolver", {
+          "alias": {
+            "@redux": "./src/redux",
+            "@lib": "./src/lib"
+          }
+        }]
+      ]
+    }
+  },
 }
